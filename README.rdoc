@@ -1,0 +1,2 @@
+== README
+Railsy Angular Nerd Store App
