@@ -1,0 +1,66 @@
+<nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a id="nav-title"class="navbar-brand" href="#">#Nav</a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#">Link</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav> <!-- /end long ass nav bar -->
+
+<div class="home jumbotron">
+  <h1 id="home-title">#NerdSwag</h1>
+  <h2 class="jumbo-description">Web Developer Gear</h2>
+</div><!-- /home jumbotron -->
+
+<div class="input-group" id="search-swag" >
+  <input type="text" class="form-control "placeholder="$ curl swag..." ng-model="main.swag">
+</div><!-- /input-group -->
+
+<br>
+
+<!--                       PANELS                     -->
+
+<div class="container">  <!--  holds the panels container -->
+
+  <div class="col-sm-4 pan-size" ng-repeat="sticker in main.stickers | filter:main.swag">
+    <div class="panel panel-default">
+      <div class="panel-heading" id="panel-heading">
+        <p id="panel-title">{{sticker.title}}</p>
+      </div><!-- /panel-heading -->
+      <div class="panel-body">
+        <!-- <article class="panel-description">description and stuff</article> -->
+        <img src="/assets/{{sticker.img_url}}" alt="Sticker image" />
+      </div><!-- /panel-body -->
+        <div class="panel-footer">
+          Add to Cart
+          <a href="/"><span class="pull-right glyphicon glyphicon-shopping-cart"></span></a>
+        </div>
+    </div><!-- /panel-default -->
+  </div><!-- /col-sm-4 pan-size -->
+
+</div> <!-- end container -->
+
+
+
+

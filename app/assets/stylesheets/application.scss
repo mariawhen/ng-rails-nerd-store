@@ -1,0 +1,100 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  background-color: #2b303b;
+  font-family: "Courier new", monospace;
+}
+
+.navbar-default {
+  margin-bottom: 0;
+  border-radius: 0;
+  // background-color: #182133;
+  background-color: #2b303b;
+  border: none;
+}
+
+#nav-title {
+  color: #00e500;
+}
+
+.form-control {
+  color: #00e500;
+  background-color: black;
+  border: none;
+
+}
+
+#search-swag {
+  width: 100%;
+}
+
+.home {
+  background-color: #4f5b66;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.panel {
+  background-color: #e7e7e7;
+  border: none;
+}
+
+#panel-heading {
+  background-color: #777;
+}
+
+#home-title {
+  color: #FFF;
+}
+
+#panel-title {
+  color: #00e500;
+  margin: 0 auto;
+}
+
+.panel-description {
+  color: yellowgreen;
+}
+.panel-body {
+  text-align: center;
+}
+
+.panel-body > img {
+  width: 98%;
+  /*Taylor's jank fix, consider re-doing at some point.*/
+  height: 98%;
+  /**/
+}
+
+.container {
+    // padding: 0 5%;
+}
+
+.jumbotron {
+  background: url('http://i172.photobucket.com/albums/w25/mariawhen/nerdsplash_zpsnwegfanv.jpg') center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0 ;
+}
+
+.jumbo-description {
+  color: deeppink;
+}
