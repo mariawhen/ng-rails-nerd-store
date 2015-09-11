@@ -28,11 +28,57 @@
   </div><!-- /.navbar-collapse -->
 </nav> <!-- /end long ass nav bar -->
 
-<div class="home jumbotron">
+<!-- <div class="home jumbotron">
   <h1 id="home-title">#NerdSwag</h1>
   <h2 class="jumbo-description">Web Developer Gear</h2>
-</div><!-- /home jumbotron -->
+</div> -->
+<!-- /home jumbotron -->
 
+
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <%= image_tag "nerdsplash.jpg" %>
+      <div class="carousel-caption">
+        T-Shirts
+      </div>
+    </div>
+    <div class="item">
+       <%= image_tag "nerdsplash3.jpg" %>
+      <div class="carousel-caption">
+        Stickers
+      </div>
+    </div>
+     <div class="item">
+       <%= image_tag "nerdsplash4.jpg" %>
+      <div class="carousel-caption">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!--          End Carousel            -->
+
+<!--          SEARCH BAR          -->
 <div class="input-group" id="search-swag" >
   <input type="text" class="form-control "placeholder="$ curl swag..." ng-model="main.swag">
 </div><!-- /input-group -->
