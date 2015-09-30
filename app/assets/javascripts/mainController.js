@@ -4,7 +4,7 @@
 
   function mainController() {
     var vm = this;
-    vm.message = "IT WOLKS REARRY WELL!";
+    // vm.message = "IT WOLKS REARRY WELL!";
 
     vm.stickers = [
       {

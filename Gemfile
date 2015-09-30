@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '2.2.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
@@ -33,6 +33,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  # Gives you different server logs for different components of your app.
+  gem 'rails_12factor'
+  # Faster server, alternative to WEBrick
+  gem 'thin'
+
   gem "pry-rails"
 
   gem "rspec-rails"
