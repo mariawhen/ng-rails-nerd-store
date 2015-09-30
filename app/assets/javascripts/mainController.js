@@ -4,7 +4,6 @@
 
   function mainController() {
     var vm = this;
-    // vm.message = "IT WOLKS REARRY WELL!";
 
     vm.stickers = [
       {
@@ -31,10 +30,6 @@
         title: "JavaScript Fractal Tee",
         img_url: "crazyhexT.jpg"
       },
-      // {
-      //   title: "NPM Package For That",
-      //   img_url: "pkgforthatStick.png"
-      // },
       {
         title: "JavaScript Fractal Design",
         img_url: "jsFractalSticker.png"
@@ -42,9 +37,9 @@
       {
         title: "Ruby Gem For That",
         img_url: "squareGemForThat.jpg"
-      },
-
+      }
     ];
+
   }
 
 })();
