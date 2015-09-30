@@ -39,7 +39,6 @@
         img_url: "squareGemForThat.jpg"
       }
     ];
-
   }
 
 })();
